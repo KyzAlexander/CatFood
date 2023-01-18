@@ -1,0 +1,33 @@
+.mainModule {
+  background-image: url(../../../assets/img/background-img.jpg);
+  max-width: 2560px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__title {
+    font-family: 'Exo2.0';
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    margin: 25px 0;
+    color: #FFFFFF;
+  } 
+  &__cards {
+    max-width: 1920px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    @media (max-width: 1024px) {
+      max-width: 970px;
+      width: 100%;
+      flex-wrap: wrap;      
+    }
+    @media screen and (max-width: 480px) {      
+      flex-direction: column;      
+    }
+  }
+}
